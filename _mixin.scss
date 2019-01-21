@@ -35,13 +35,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
 		} 
 	}
 	@if $breakpoint==big-desktop {
-		@media (min-width: 112.5em) { //1800px 112.5rem
-			@content;
-		} 
-	}
-	@if $breakpoint==big-desktop1 {
 		@media (max-width: 112.5em) { //1800px 112.5rem
 			@content;
 		} 
 	}
+	// @if $breakpoint==big-desktop1 {
+	// 	@media (min-width: 120em) { //1800px 112.5rem
+	// 		@content;
+	// 	} 
+	// }
 }

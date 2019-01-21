@@ -192,6 +192,9 @@ body {
   @media (max-width: 75em) {
     .container {
       width: 90%; } }
+  @media (max-width: 112.5em) {
+    .container {
+      width: 90%; } }
 
 p {
   font-family: Lora, serif;
