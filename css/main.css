@@ -206,7 +206,7 @@ body {
       width: 65%; } }
   @media (max-width: 37.5em) {
     .container {
-      width: 75%; } }
+      width: 95%; } }
 
 p {
   font-family: Lora, serif;
@@ -225,7 +225,7 @@ p {
       line-height: 3.2rem; } }
   @media (max-width: 37.5em) {
     p {
-      font-size: 1.5rem;
+      font-size: 2rem;
       line-height: 2.3rem; } }
 
 .img-responsive {
