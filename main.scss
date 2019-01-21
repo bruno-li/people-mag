@@ -220,7 +220,7 @@ body {
 
     }
     @include respond(phone) {
-        width: 75%;
+        width: 85%;
 
     }
 }
@@ -241,7 +241,7 @@ p {
         line-height: 3.2rem;
     }
     @include respond(phone) {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         line-height: 2.3rem;
     }
 }
