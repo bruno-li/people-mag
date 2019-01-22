@@ -200,10 +200,10 @@ body {
       width: 45%; } }
   @media (max-width: 75em) {
     .container {
-      width: 70%; } }
+      width: 80%; } }
   @media (max-width: 51em) {
     .container {
-      width: 65%; } }
+      width: 90%; } }
   @media (max-width: 37.5em) {
     .container {
       width: 95%; } }
@@ -217,7 +217,7 @@ p {
   margin-bottom: 2.8rem; }
   @media (max-width: 75em) {
     p {
-      font-size: 1.8rem;
+      font-size: 2.3rem;
       line-height: 2.7rem; } }
   @media (max-width: 51em) {
     p {

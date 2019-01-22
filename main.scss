@@ -32,6 +32,7 @@ body {
     height: 4.9rem;
     justify-content: center;
 	width: 100%;
+
 	 // nav left container
     &-left-container {
         display: flex;
@@ -47,7 +48,9 @@ body {
         @include respond(phone) {
             margin-right: 35rem;
         }
-    } //nav right container
+	} 
+	
+	//nav right container
     &-right-container {
         display: flex;
         list-style: none;
@@ -213,10 +216,10 @@ body {
         width: 45%;
     }
     @include respond(tab-land) {
-        width: 70%;
+        width: 80%;
 	}
 	@include respond(tab-port) {
-		width: 65%;
+		width: 90%;
 
     }
     @include respond(phone) {
@@ -233,7 +236,7 @@ p {
     margin-top: 2.8rem;
     margin-bottom: 2.8rem;
     @include respond(tab-land) {
-        font-size: 1.8rem;
+        font-size: 2.3rem;
         line-height: 2.7rem;
     }
     @include respond(tab-port) {
