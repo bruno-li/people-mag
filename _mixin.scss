@@ -18,30 +18,24 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 
 @mixin respond ($breakpoint) {
-	//1em = 16px - the default browser pixels
 	@if $breakpoint==phone {
-		@media (max-width: 37.5em) { // 600px / 16 = 37.5em
+		@media (max-width: 600px) { 
 			@content; //allows us to pass a block of code to the mixin
 		} 
 	}
 	@if $breakpoint==tab-port {
-		@media (max-width: 51em) { // 816px
+		@media (max-width: 1070px) { 
 			@content; 
 		} 
 	}
 	@if $breakpoint==tab-land {
-		@media (max-width: 75em) { //1200px
+		@media (max-width: 1200px) { 
 			@content;
 		} 
 	}
 	@if $breakpoint==big-desktop {
-		@media (max-width: 112.5em) { //1800px 112.5rem
+		@media (min-width: 1800px) { 
 			@content;
 		} 
 	}
-	// @if $breakpoint==big-desktop1 {
-	// 	@media (min-width: 120em) { //1800px 112.5rem
-	// 		@content;
-	// 	} 
-	// }
 }
