@@ -23,9 +23,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   /* inherited the box-sizing property in the body selector to apply in the entire documen */
   box-sizing: inherit; }
 
-html {
-  font-size: 62.5%; }
-
 body {
   /* let us customize the box size model with specific unit without the default values */
   box-sizing: border-box; }
@@ -33,38 +30,38 @@ body {
 .navbar {
   display: flex;
   position: fixed;
+  top: 0;
   font-family: "Roboto", sans-serif;
   background-color: white;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
-  height: 4.9rem;
   justify-content: center;
   width: 100%; }
   .navbar-left-container {
     display: flex;
     list-style: none;
-    margin-right: 48rem;
+    margin-right: 400px;
     align-items: center; }
-    @media (max-width: 75em) {
+    @media (max-width: 1200px) {
       .navbar-left-container {
         margin-left: 8rem; } }
-    @media (max-width: 51em) {
+    @media (max-width: 1070px) {
       .navbar-left-container {
         margin: 0 15rem; } }
-    @media (max-width: 37.5em) {
+    @media (max-width: 600px) {
       .navbar-left-container {
         margin-right: 35rem; } }
   .navbar-right-container {
     display: flex;
     list-style: none;
     align-items: center;
-    margin-right: 15rem; }
-    @media (max-width: 75em) {
+    margin-left: 12rem; }
+    @media (max-width: 1200px) {
       .navbar-right-container {
         margin-left: 0rem; } }
-    @media (max-width: 51em) {
+    @media (max-width: 1070px) {
       .navbar-right-container {
         margin: 0 18rem; } }
-    @media (max-width: 37.5em) {
+    @media (max-width: 600px) {
       .navbar-right-container {
         display: none; } }
   .navbar a {
@@ -72,73 +69,74 @@ body {
   .navbar-font-1 {
     color: #000;
     text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: 500; }
-    @media (max-width: 75em) {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400; }
+    @media (max-width: 1200px) {
       .navbar-font-1 {
         display: none; } }
   .navbar-font-2 {
     flex-shrink: 0;
     color: #000;
-    font-family: Limerick, sans-serif;
-    font-size: 1rem;
+    font-family: "Limerick", sans-serif;
+    font-size: 13px;
+    line-height: 20px;
     font-weight: 400;
     border-left: 1px solid #d7d7d9;
-    margin-right: 2rem;
     padding-left: .7rem;
     padding-right: 1rem; }
-    @media (max-width: 75em) {
+    @media (max-width: 1200px) {
       .navbar-font-2 {
         padding-left: .5rem;
         padding-right: 0rem;
         margin-right: 1rem; } }
-    @media (max-width: 51em) {
+    @media (max-width: 1070px) {
       .navbar-font-2 {
         display: none; } }
   .navbar-font-3 {
     color: #ee0077;
     font-family: Poppins, Helvetica, sans-serif;
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: .9rem;
-    line-height: 2.4rem; }
-    @media (max-width: 51em) {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px; }
+    @media (max-width: 1070px) {
       .navbar-font-3 {
         font-size: 1.2rem; } }
   .navbar-hamburger-logo {
-    height: 1.5rem;
-    padding: 0;
-    margin: .3rem 0; }
+    height: 17px;
+    padding: 0; }
   .navbar-hamburger-logo-link {
-    padding-right: .8rem;
-    margin-left: .5rem; }
-    @media (max-width: 75em) {
+    padding-right: 9px;
+    margin-left: 2rem; }
+    @media (max-width: 1200px) {
       .navbar-hamburger-logo-link {
         margin: 0 0 0 4rem; } }
   .navbar-brand-logo-link {
     padding: 0;
-    margin: 1rem 1.7rem; }
-    @media (max-width: 75em) {
+    margin: 0 1rem;
+    margin-top: 6px; }
+    @media (max-width: 1200px) {
       .navbar-brand-logo-link {
         margin: 0 0 0 .5rem; } }
   .navbar-brand-logo-img {
     padding: 0;
-    height: 3rem; }
+    height: 35px; }
   .navbar__search-icon {
-    height: 1.2rem;
-    margin-right: 2.5rem; }
-    @media (max-width: 51em) {
+    height: 16px;
+    margin-right: 1.6rem; }
+    @media (max-width: 1070px) {
       .navbar__search-icon {
         display: none; } }
   .navbar__vertical-line {
     border-left: 1px solid #d7d7d9;
-    height: 4.8rem;
+    height: 59px;
     padding-left: 1rem; }
-    @media (max-width: 75em) {
+    @media (max-width: 1200px) {
       .navbar__vertical-line {
         padding-left: .5rem;
         height: 2rem; } }
-    @media (max-width: 51em) {
+    @media (max-width: 1070px) {
       .navbar__vertical-line {
         display: none; } }
   .navbar .glyphicon {
@@ -147,36 +145,42 @@ body {
     color: rgba(0, 0, 0, 0.65); }
 
 .headline-container {
-  margin-top: 6.8rem; }
+  margin-top: 4rem; }
+
+.headline-container-photo {
+  width: 100%; }
+  .headline-container-photo--img {
+    width: 100%; }
 
 .headline-top-links {
   display: flex;
   font-family: Lora, serif;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
   justify-content: center;
   text-transform: uppercase;
-  color: #239ad2;
-  margin: .5rem 0; }
+  color: #239ad2; }
   .headline-top-links li:first-child {
-    margin: 0 2rem;
+    margin: 0 24px;
     list-style: none; }
 
 .headline-home-link, .headline-parents-link {
   color: black; }
   .headline-home-link:hover, .headline-parents-link:hover {
     text-decoration: none;
-    color: purple; }
+    color: purple;
+    cursor: default; }
 
 .headline__heading {
   font-family: Basel, serif;
-  font-weight: 100;
-  line-height: 4.5rem;
-  font-size: 4rem;
+  font-weight: 400;
+  line-height: 52px;
+  font-size: 48px;
   margin: .67rem 0;
   text-align: center;
   width: 100%; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .headline__heading {
       font-size: 2.4rem;
       line-height: 2.7rem; } }
@@ -187,57 +191,65 @@ body {
   margin: 1rem 0; }
 
 .headline__social-media--icons {
-  height: 2.6rem; }
+  height: 1.8rem; }
 
 .headline__social-media-links {
-  width: 3.1rem; }
+  width: 2.1rem; }
+
+.main-content {
+  margin: 0 auto;
+  max-width: 650px; }
+  .main-content p {
+    font-family: Lora, serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 20px 0;
+    color: rgba(0, 0, 0, 0.95); }
+    @media (max-width: 1200px) {
+      .main-content p {
+        font-size: 2.3rem;
+        line-height: 2.7rem; } }
+    @media (max-width: 1070px) {
+      .main-content p {
+        font-size: 2.5rem;
+        line-height: 3.2rem; } }
+    @media (max-width: 600px) {
+      .main-content p {
+        font-size: 2rem;
+        line-height: 2.3rem; } }
 
 .container {
-  width: 35%;
+  border: 2px solid red;
+  width: 60%;
   margin: 0 auto; }
-  @media (max-width: 112.5em) {
+  @media (min-width: 1800px) {
     .container {
       width: 45%; } }
-  @media (max-width: 75em) {
+  @media (max-width: 1200px) {
     .container {
       width: 80%; } }
-  @media (max-width: 51em) {
+  @media (max-width: 1070px) {
     .container {
       width: 90%; } }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .container {
       width: 95%; } }
 
-p {
-  font-family: Lora, serif;
-  font-weight: 100;
-  font-size: 1.7rem;
-  line-height: 2.1rem;
-  margin-top: 2.8rem;
-  margin-bottom: 2.8rem; }
-  @media (max-width: 75em) {
-    p {
-      font-size: 2.3rem;
-      line-height: 2.7rem; } }
-  @media (max-width: 51em) {
-    p {
-      font-size: 2.5rem;
-      line-height: 3.2rem; } }
-  @media (max-width: 37.5em) {
-    p {
-      font-size: 2rem;
-      line-height: 2.3rem; } }
-
-.img-responsive {
-  width: 100%; }
-
-.img-desc {
-  font-size: 1rem;
-  margin: .2rem 1rem;
-  padding: 0;
-  color: #A3A5A9; }
-  .img-desc--author {
-    margin-left: 1.5rem; }
+.figure-container {
+  max-width: 650px;
+  margin: 0 auto; }
+  .figure-container .img-responsive {
+    width: 100%; }
+  .figure-container .img-desc {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 10px 15px;
+    padding: 0;
+    color: #A3A5A9; }
+    .figure-container .img-desc--author {
+      margin-left: 1.5rem; }
 
 .footer {
   font-family: Limerick, sans-serif;
@@ -247,7 +259,7 @@ p {
   height: 45rem;
   border-top: 1px solid #d7d7d9;
   border-bottom: 1px solid #d7d7d9; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 600px) {
     .footer {
       height: 90rem; } }
   .footer h2 {
@@ -262,21 +274,21 @@ p {
   .footer-inner-container {
     display: flex;
     justify-content: center; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 600px) {
       .footer-inner-container {
         flex-direction: column;
         align-items: center; } }
   .footer-inner-container-left {
     text-align: center;
     padding-right: 5rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 600px) {
       .footer-inner-container-left {
         align-items: center;
         width: 100%; } }
   .footer-inner-container--ad {
     height: 20rem;
     margin-top: 2rem; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 600px) {
       .footer-inner-container--ad {
         margin-left: 5rem; } }
   .footer-inner-container-middle {
@@ -284,7 +296,7 @@ p {
     width: 25%;
     border-right: 1px solid #d7d7d9;
     border-left: 1px solid #d7d7d9; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 600px) {
       .footer-inner-container-middle {
         font-size: 1.1rem;
         border-top: 1px solid #d7d7d9;
@@ -304,16 +316,16 @@ p {
   .footer-inner-container-right {
     width: 100%;
     text-align: center; }
-    @media (max-width: 112.5em) {
+    @media (min-width: 1800px) {
       .footer-inner-container-right {
         width: 20%; } }
-    @media (max-width: 75em) {
+    @media (max-width: 1200px) {
       .footer-inner-container-right {
         width: 25%; } }
-    @media (max-width: 51em) {
+    @media (max-width: 1070px) {
       .footer-inner-container-right {
         width: 75%; } }
-    @media (max-width: 37.5em) {
+    @media (max-width: 600px) {
       .footer-inner-container-right {
         width: 17rem; } }
     .footer-inner-container-right--links {
@@ -324,16 +336,16 @@ p {
     .footer-inner-container-right--media {
       width: 75%;
       margin-bottom: 4rem; }
-      @media (max-width: 112.5em) {
+      @media (min-width: 1800px) {
         .footer-inner-container-right--media {
           width: 65%; } }
-      @media (max-width: 75em) {
+      @media (max-width: 1200px) {
         .footer-inner-container-right--media {
           width: 70%; } }
-      @media (max-width: 51em) {
+      @media (max-width: 1070px) {
         .footer-inner-container-right--media {
           width: 75%; } }
-      @media (max-width: 37.5em) {
+      @media (max-width: 600px) {
         .footer-inner-container-right--media {
           width: 17rem; } }
     .footer-inner-container-right button {

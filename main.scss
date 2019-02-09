@@ -13,11 +13,6 @@ $color-grey: #d7d7d9;
     box-sizing: inherit;
 }
 
-html {
-    // this defines what 1rem is
-    font-size: 62.5%;
-}
-
 body {
     /* let us customize the box size model with specific unit without the default values */
     box-sizing: border-box;
@@ -26,18 +21,18 @@ body {
 .navbar {
     display: flex;
     position: fixed;
+    top: 0;
     font-family: "Roboto", sans-serif;
     background-color: white;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .15);
-    height: 4.9rem;
+    // height: 2.9rem;
     justify-content: center;
-	width: 100%;
-
+    width: 100%;
 	 // nav left container
     &-left-container {
         display: flex;
         list-style: none;
-        margin-right: 48rem;
+        margin-right: 400px;
         align-items: center;
         @include respond(tab-land) {
             margin-left: 8rem;
@@ -55,7 +50,8 @@ body {
         display: flex;
         list-style: none;
         align-items: center;
-        margin-right: 15rem;
+        margin-left: 12rem;
+        // margin-right: 5rem;
         @include respond(tab-land) {
             margin-left: 0rem;
         }
@@ -72,8 +68,10 @@ body {
     &-font-1 {
         color: $color-black;
         text-transform: uppercase;
-        font-size: 1.1rem;
-        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        // margin-bottom: 2px;
         @include respond(tab-land) {
             display: none;
         }
@@ -81,11 +79,12 @@ body {
     &-font-2 {
         flex-shrink: 0;
         color: $color-black;
-        font-family: Limerick, sans-serif;
-        font-size: 1rem;
+        font-family: "Limerick", sans-serif;
+        font-size: 13px;
+        line-height: 20px;
         font-weight: 400;
         border-left: 1px solid $color-grey;
-        margin-right: 2rem;
+        // margin-right: 1rem;
         padding-left: .7rem;
         padding-right: 1rem;
         @include respond(tab-land) {
@@ -101,46 +100,47 @@ body {
         color: #ee0077;
         font-family: Poppins, Helvetica, sans-serif;
         text-transform: uppercase;
-        font-weight: 900;
-        font-size: .9rem;
-        line-height: 2.4rem;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 12px;
         @include respond(tab-port) {
             font-size: 1.2rem;
         }
     }
     &-hamburger-logo {
-        height: 1.5rem;
+        height: 17px;
         padding: 0;
-        margin: .3rem 0;
+        // margin: 1px 0;
     }
     &-hamburger-logo-link {
-        padding-right: .8rem;
-        margin-left: .5rem;
+        padding-right: 9px;
+        margin-left: 2rem;
         @include respond(tab-land) {
             margin: 0 0 0 4rem;
         }
     }
     &-brand-logo-link {
         padding: 0;
-        margin: 1rem 1.7rem;
+        margin: 0 1rem;
+        margin-top: 6px;
         @include respond(tab-land) {
             margin: 0 0 0 .5rem;
         }
     }
     &-brand-logo-img {
         padding: 0;
-        height: 3rem;
+        height: 35px;
     }
     &__search-icon {
-        height: 1.2rem;
-        margin-right: 2.5rem;
+        height: 16px;
+        margin-right: 1.6rem;
         @include respond(tab-port) {
             display: none;
         }
     }
     &__vertical-line {
         border-left: 1px solid $color-grey;
-        height: 4.8rem;
+        height: 59px;
         padding-left: 1rem;
         @include respond(tab-land) {
             padding-left: .5rem;
@@ -159,19 +159,29 @@ body {
 
 .headline {
     &-container {
-        margin-top: 6.8rem;
+        margin-top: 4rem;
     }
+    &-container-photo{
+            width: 100%;
+            // border: 2px solid purple;
+            &--img{
+                width: 100%;
+            }
+    }
+ 
+
     &-top-links {
         display: flex;
         font-family: Lora, serif;
-        font-size: 1rem;
-        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 700;
         justify-content: center;
         text-transform: uppercase;
         color: #239ad2;
-        margin: .5rem 0;
+        // margin: 10px 0;
         li:first-child {
-            margin: 0 2rem;
+            margin: 0 24px;
             list-style: none;
         }
     }
@@ -181,13 +191,15 @@ body {
         &:hover {
             text-decoration: none;
             color: purple;
+            cursor: default;
+
         }
     }
     &__heading {
         font-family: Basel, serif;
-        font-weight: 100;
-        line-height: 4.5rem;
-        font-size: 4rem;
+        font-weight: 400;
+        line-height: 52px;
+        font-size: 48px;
         margin: .67rem 0;
         text-align: center;
         width: 100%;
@@ -202,15 +214,43 @@ body {
         margin: 1rem 0;
     }
     &__social-media--icons {
-        height: 2.6rem;
+        height: 1.8rem;
     }
     &__social-media-links {
-        width: 3.1rem;
+        width: 2.1rem;
+    }
+}
+
+.main-content{
+    margin: 0 auto;
+    max-width: 650px;
+    // border: 2px solid green;
+
+    p {
+        font-family: Lora, serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        margin: 20px 0;
+        color: rgba(0, 0, 0, 0.95);
+        @include respond(tab-land) {
+            font-size: 2.3rem;
+            line-height: 2.7rem;
+        }
+        @include respond(tab-port) {
+            font-size: 2.5rem;
+            line-height: 3.2rem;
+        }
+        @include respond(phone) {
+            font-size: 2rem;
+            line-height: 2.3rem;
+        }
     }
 }
 
 .container {
-    width: 35%;
+    border: 2px solid red;
+    width: 60%;
 	margin: 0 auto;
     @include respond(big-desktop) {
         width: 45%;
@@ -228,40 +268,29 @@ body {
     }
 }
 
-p {
-    font-family: Lora, serif;
-    font-weight: 100;
-    font-size: 1.7rem;
-    line-height: 2.1rem;
-    margin-top: 2.8rem;
-    margin-bottom: 2.8rem;
-    @include respond(tab-land) {
-        font-size: 2.3rem;
-        line-height: 2.7rem;
+
+
+.figure-container{
+    max-width: 650px;
+    margin: 0 auto;
+    .img-responsive {
+        width: 100%;
     }
-    @include respond(tab-port) {
-        font-size: 2.5rem;
-        line-height: 3.2rem;
-    }
-    @include respond(phone) {
-        font-size: 2rem;
-        line-height: 2.3rem;
+    .img-desc {
+        font-family: "Roboto", sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        margin: 10px 15px;
+        padding: 0;
+        color: #A3A5A9;
+        &--author {
+            margin-left: 1.5rem;
+        }
     }
 }
 
-.img-responsive {
-	width: 100%;
-}
 
-.img-desc {
-    font-size: 1rem;
-    margin: .2rem 1rem;
-    padding: 0;
-    color: #A3A5A9;
-    &--author {
-        margin-left: 1.5rem;
-    }
-}
+
 
 .footer {
     font-family: Limerick, sans-serif;
