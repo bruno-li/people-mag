@@ -319,8 +319,7 @@ body {
     @media (max-width: 1024px) {
       .footer-inner-container--ad {
         height: 220px;
-        margin-left: 1rem;
-        border: 2px solid red; } }
+        margin-left: 1rem; } }
     @media (max-width: 600px) {
       .footer-inner-container--ad {
         margin-left: 3rem; } }

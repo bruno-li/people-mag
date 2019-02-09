@@ -383,7 +383,6 @@ body {
         @include respond(tab-port) {
             height: 220px; 
             margin-left: 1rem;
-            border: 2px solid red;
 
         }
         @include respond(phone) {
