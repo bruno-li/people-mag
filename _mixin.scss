@@ -24,7 +24,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 		} 
 	}
 	@if $breakpoint==tab-port {
-		@media (max-width: 1070px) { 
+		@media (max-width: 1024px) { 
 			@content; 
 		} 
 	}

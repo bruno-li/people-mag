@@ -38,10 +38,10 @@ body {
             margin-left: 8rem;
         }
         @include respond(tab-port) {
-            margin: 0 15rem;
+            margin: .4rem 10.5rem;
         }
         @include respond(phone) {
-            margin-right: 35rem;
+            margin-right: 24rem;
         }
 	} 
 	
@@ -56,7 +56,7 @@ body {
             margin-left: 0rem;
         }
         @include respond(tab-port) {
-            margin: 0 18rem;
+            margin: 0 14.5rem;
         }
         @include respond(phone) {
             display: none;
@@ -104,13 +104,12 @@ body {
         font-size: 12px;
         line-height: 12px;
         @include respond(tab-port) {
-            font-size: 1.2rem;
+            font-size: 12px;
         }
     }
     &-hamburger-logo {
         height: 17px;
         padding: 0;
-        // margin: 1px 0;
     }
     &-hamburger-logo-link {
         padding-right: 9px;
@@ -124,12 +123,16 @@ body {
         margin: 0 1rem;
         margin-top: 6px;
         @include respond(tab-land) {
-            margin: 0 0 0 .5rem;
+            margin-top: .3rem;
+        }
+        @include respond(phone) {
+            margin-left: 10px;
         }
     }
     &-brand-logo-img {
         padding: 0;
         height: 35px;
+
     }
     &__search-icon {
         height: 16px;
@@ -204,8 +207,8 @@ body {
         text-align: center;
         width: 100%;
         @include respond(phone) {
-            font-size: 2.4rem;
-            line-height: 2.7rem;
+            font-size: 36px;
+            line-height: 40px;
         }
     }
     &__social-media {
@@ -225,6 +228,19 @@ body {
     margin: 0 auto;
     max-width: 650px;
     // border: 2px solid green;
+    h2{
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 700;
+        color:rgba(0, 0, 0, 0.95);
+
+        @include respond(phone) {
+            text-align: center;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
 
     p {
         font-family: Lora, serif;
@@ -234,22 +250,22 @@ body {
         margin: 20px 0;
         color: rgba(0, 0, 0, 0.95);
         @include respond(tab-land) {
-            font-size: 2.3rem;
-            line-height: 2.7rem;
+            font-size: 18px;
+            line-height: 28px;
         }
         @include respond(tab-port) {
-            font-size: 2.5rem;
-            line-height: 3.2rem;
+            font-size: 18px;
+            line-height: 28px;
         }
         @include respond(phone) {
-            font-size: 2rem;
-            line-height: 2.3rem;
+            font-size: 16px;
+            line-height: 28px;
         }
     }
 }
 
 .container {
-    border: 2px solid red;
+    // border: 2px solid red;
     width: 60%;
 	margin: 0 auto;
     @include respond(big-desktop) {
@@ -290,35 +306,43 @@ body {
 }
 
 
-
+//////////////// FOOTER ///////////////////////
 
 .footer {
-    font-family: Limerick, sans-serif;
-    font-size: 1rem;
+    font-family: "Limerick", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
     background-color: #FAF7FA;
     margin-bottom: 10rem;
-    height: 45rem;
+    height: 28rem;
     border-top: 1px solid $color-grey;
 	border-bottom: 1px solid $color-grey;
 	
     @include respond(phone) {
-        height: 90rem;
+        height: 55rem;
 	}
 	
     & h2 {
-        font-size: 1.8rem;
-		font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 500;
+        
+        @include respond(phone) {
+            font-size: 20px;
+            line-height: 28px;
+        } 
     }
     &-logo {
-        padding: 4rem 0;
+        padding: 2rem 0;
     }
     &-logo-img {
         display: block;
         margin: 0 auto;
-        height: 5rem;
+        height: 60px;
 	}
 	
-	// inner container
+    // inner container
+    
     &-inner-container {
         display: flex;
 		justify-content: center;
@@ -331,35 +355,59 @@ body {
 	//left container
     &-inner-container-left {
         text-align: center;
-		padding-right: 5rem;
-		
+        padding-right: 2rem;
+        
+
         @include respond(phone) {
             align-items: center;
             width: 100%;
         }
+        h2{
+            @include respond(tab-port) {
+                margin-left: 1rem;
+            }
+            
+            @include respond(phone) {
+                margin-left: 3rem;
+                
+            }
+
+        }
     }
     &-inner-container--ad {
-        height: 20rem; // padding: 2rem 2rem;
-		margin-top: 2rem;
-		
+        height: 270px; 
+        margin-top: 1rem;
+        @include respond(tab-land) {
+            height: 245px; 
+        }
+        @include respond(tab-port) {
+            height: 220px; 
+            margin-left: 1rem;
+            border: 2px solid red;
+
+        }
         @include respond(phone) {
-            margin-left: 5rem;
+            margin-left: 3rem;
         }
 	} 
 	// middle container
     &-inner-container-middle {
         text-align: center;
-        width: 25%;
+        width: 20%;
         border-right: 1px solid $color-grey;
-		border-left: 1px solid $color-grey;
+        border-left: 1px solid $color-grey;
+        
+        @include respond(tab-land) {
+            width: 30%;
+		}
 		
         @include respond(phone) {
-            font-size: 1.1rem;
+            font-size: 13px;
             border-top: 1px solid $color-grey;
             border-bottom: 1px solid $color-grey;
             border-right: none;
             border-left: none;
-            margin: 2rem 0;
+            margin: 1rem 0;
             padding: 1.5rem 0;
             width: 85%;
         }
@@ -368,23 +416,26 @@ body {
             margin-top: 1rem;
             list-style: none;
             display: inline-block;
+ 
             & li {
                 padding: 1rem 0;
+                @include respond(phone) {
+                    padding: .5rem;
+                }
             }
         }
 	}
 	 //right container
     &-inner-container-right {
-        width: 100%;
+        width: 20%;
 		text-align: center;
-		@include respond(big-desktop){
-			width: 20%;
-		}
 		@include respond(tab-land) {
-			width: 25%;
+            width: 25%;
+            margin-left: 1.3rem;
 		}
 		@include respond(tab-port) {
-			width: 75%;
+            margin-right: .7rem;
+			width: 25%;
 		}
 		@include respond(phone) {
 			width: 17rem;
@@ -393,42 +444,56 @@ body {
         &--links {
             list-style: none;
             & li {
-                font-size: 1.1rem;
+                font-size: 14px;
                 padding: 1.5rem 0 0 0;
             }
 		}
 
 
         &--media {
-            width: 75%;
-			margin-bottom: 4rem;
-			@include respond(big-desktop){
-				width: 65%;
-			}
+            width: 220px;
+			margin-bottom: 3rem;
+
 			@include respond(tab-land) {
-				width: 70%;
+                width: 220px;
+                margin-bottom: 2rem;
 			}
 			@include respond(tab-port) {
-				width: 75%;
+                width: 180px;
 			}
 			@include respond(phone) {
-				width: 17rem;
+				width: 220px;
 			}
         }
         & button {
             display: block;
             margin: 1rem auto;
             text-transform: uppercase;
-            padding: 1.2rem 4.2rem;
-            font-size: 1.2rem;
+            padding: .8rem 2.9rem;
+            font-size: 14px;
+            line-height: 20px;
             font-weight: 900;
             letter-spacing: .02rem;
             background-color: #fff;
             color: #000;
             border: 5px solid #00aeef;
+
+            @include respond(tab-land) {
+                font-size: 10px;
+                  margin-left: 1rem;
+                  padding: .7rem 2.7rem;
+            }
+            @include respond(phone) {
+                margin: 1rem auto;
+
+			}
         }
     }
     & span {
-        font-size: 1.15rem;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+
+
     }
 }
