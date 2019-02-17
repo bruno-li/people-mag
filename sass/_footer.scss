@@ -1,0 +1,185 @@
+//////////////// FOOTER ///////////////////////
+
+.footer {
+    font-family: "Limerick", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #FAF7FA;
+    margin-bottom: 10rem;
+    height: 28rem;
+    border-top: 1px solid $color-grey;
+	border-bottom: 1px solid $color-grey;
+	
+    @include respond(phone) {
+        height: 55rem;
+	}
+	
+    & h2 {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 500;
+        
+        @include respond(phone) {
+            font-size: 20px;
+            line-height: 28px;
+        } 
+    }
+    &-logo {
+        padding: 2rem 0;
+    }
+    &-logo-img {
+        display: block;
+        margin: 0 auto;
+        height: 60px;
+	}
+	
+///////// INNER CONTAINER /////////
+    
+    &-inner-container {
+        display: flex;
+		justify-content: center;
+		
+        @include respond(phone) {
+            flex-direction: column;
+            align-items: center;
+        }
+	} 
+	///////// LEFT CONTAINER /////////
+    &-inner-container-left {
+        text-align: center;
+        padding-right: 2rem;
+        
+
+        @include respond(phone) {
+            align-items: center;
+            width: 100%;
+        }
+        h2{
+            @include respond(tab-port) {
+                margin-left: 1rem;
+            }
+            
+            @include respond(phone) {
+                margin-left: 3rem;
+                
+            }
+        }
+    }
+    &-inner-container--ad {
+        height: 270px; 
+        margin-top: 1rem;
+        @include respond(tab-land) {
+            height: 245px; 
+        }
+        @include respond(tab-port) {
+            height: 220px; 
+            margin-left: 1rem;
+
+        }
+        @include respond(phone) {
+            margin-left: 3rem;
+        }
+	} 
+	///////// MIDDLE CONTAINER /////////
+    &-inner-container-middle {
+        text-align: center;
+        width: 20%;
+        border-right: 1px solid $color-grey;
+        border-left: 1px solid $color-grey;
+        
+        @include respond(tab-land) {
+            width: 30%;
+		}
+		
+        @include respond(phone) {
+            font-size: 13px;
+            border-top: 1px solid $color-grey;
+            border-bottom: 1px solid $color-grey;
+            border-right: none;
+            border-left: none;
+            margin: 1rem 0;
+            padding: 1.5rem 0;
+            width: 85%;
+        }
+        &--links {
+            font-weight: 500;
+            margin-top: 1rem;
+            list-style: none;
+            display: inline-block;
+ 
+            & li {
+                padding: 1rem 0;
+                @include respond(phone) {
+                    padding: .5rem;
+                }
+            }
+        }
+	}
+	 /////////RIGHT CONTAINER /////////
+    &-inner-container-right {
+        width: 20%;
+		text-align: center;
+		@include respond(tab-land) {
+            width: 25%;
+            margin-left: 1.3rem;
+		}
+		@include respond(tab-port) {
+            margin-right: .7rem;
+			width: 25%;
+		}
+		@include respond(phone) {
+			width: 17rem;
+		}
+		
+        &--links {
+            list-style: none;
+            & li {
+                font-size: 14px;
+                padding: 1.5rem 0 0 0;
+            }
+		}
+        &--media {
+            width: 220px;
+			margin-bottom: 3rem;
+
+			@include respond(tab-land) {
+                width: 220px;
+                margin-bottom: 2rem;
+			}
+			@include respond(tab-port) {
+                width: 180px;
+			}
+			@include respond(phone) {
+				width: 220px;
+			}
+        }
+        & button {
+            display: block;
+            margin: 1rem auto;
+            text-transform: uppercase;
+            padding: .8rem 2.9rem;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 900;
+            letter-spacing: .02rem;
+            background-color: #fff;
+            color: #000;
+            border: 5px solid #00aeef;
+
+            @include respond(tab-land) {
+                font-size: 10px;
+                  margin-left: 1rem;
+                  padding: .7rem 2.7rem;
+            }
+            @include respond(phone) {
+                margin: 1rem auto;
+
+			}
+        }
+    }
+    & span {
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
