@@ -1,67 +1,8 @@
-///////// PAGE HEADLINE AND SOCIAL MEDIA ////////
-.headline {
-    &-container {
-        margin-top: 4rem;
-    }
-    &-container-photo{
-            width: 100%;
-            &--img{
-                width: 100%;
-            }
-    }
-    &-top-links {
-        display: flex;
-        font-family: Lora, serif;
-        font-size: 12px;
-        line-height: 20px;
-        font-weight: 700;
-        justify-content: center;
-        text-transform: uppercase;
-        color: #239ad2;
-        li:first-child {
-            margin: 0 24px;
-            list-style: none;
-        }
-    }
-    &-home-link,
-    &-parents-link {
-        color: black;
-        &:hover {
-            text-decoration: none;
-            color: purple;
-            cursor: default;
-        }
-    }
-    &__heading {
-        font-family: Basel, serif;
-        font-weight: 400;
-        line-height: 52px;
-        font-size: 48px;
-        margin: .67rem 0;
-        text-align: center;
-        width: 100%;
-        @include respond(phone) {
-            font-size: 36px;
-            line-height: 40px;
-        }
-    }
-    &__social-media {
-        display: flex;
-        justify-content: center;
-        margin: 1rem 0;
-    }
-    &__social-media--icons {
-        height: 1.8rem;
-    }
-    &__social-media-links {
-        width: 2.1rem;
-    }
-}
 
-/////////// WEBSITE MAIN CONTENT ////////
-// main container
-.container {
+
+.main-container {
     width: 60%;
+    max-width: 850px;
 	margin: 0 auto;
     @include respond(big-desktop) {
         width: 45%;
@@ -79,10 +20,73 @@
     }
 }
 
+
+
+///////// PAGE HEADLINE AND SOCIAL MEDIA ////////
+.headline {
+    margin-top: 4rem;
+
+    &__top-link {
+        display: flex;
+        font-family: Lora, serif;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 700;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #239ad2;
+        li:first-child {
+            margin: 0 24px;
+            list-style: none;
+        }
+        &-text {
+            color: black;
+            &:hover {
+                text-decoration: none;
+                color: purple;
+                cursor: default;
+            }
+        }
+    }
+   
+    &__heading {
+        font-family: Basel, serif;
+        font-weight: 400;
+        line-height: 52px;
+        font-size: 48px;
+        margin: .67rem 0;
+        text-align: center;
+        width: 100%;
+        @include respond(phone) {
+            font-size: 36px;
+            line-height: 40px;
+        }
+    }
+    &__social-media {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+
+        &-img{
+            width: 165px;
+            height: 100%;
+        }
+    }
+
+    &__photo{
+        width: 100%;
+        &--img{
+            width: 100%;
+        }
+}
+
+}
+
+/////////// WEBSITE MAIN CONTENT ////////
 .main-content{
     margin: 0 auto;
     max-width: 650px;
-    h2{
+    &__headline{
         font-family: "Roboto", sans-serif;
         font-size: 18px;
         line-height: 28px;
@@ -96,7 +100,7 @@
         }
     }
 
-    p {
+    &__paragraph {
         font-family: "Lora", serif;
         font-weight: 400;
         font-size: 18px;
