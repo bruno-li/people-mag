@@ -1,6 +1,64 @@
+.footer{
+
+    &__heading{
+
+    }
+
+    &__heading-logo{
+
+        &__img{
+
+        }
+    }
+    // LEFT CONTAINER
+    &__left-container{
+        &__figure{
+            
+        }
+        &__img{
+
+        }
+  
+    }
+    // MIDDLE CONTAINER
+    &__middle-container{
+        &__list{
+
+        }
+        &__item{
+
+        }
+        &__link{
+
+        }
+    }
+
+    // RIGHT CONTAINER
+    &__right-container{
+        &__text{
+
+        }
+        &__social-media{
+
+        }
+
+        &__btn{
+
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
 //////////////// FOOTER ///////////////////////
 
-.footer {
+.footer- {
     font-family: "Limerick", sans-serif;
     font-size: 14px;
     line-height: 20px;

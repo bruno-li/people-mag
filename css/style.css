@@ -106,9 +106,9 @@ body {
     .headline__top-link li:first-child {
       margin: 0 24px;
       list-style: none; }
-    .headline__top-link-text {
+    .headline__top-link__text {
       color: black; }
-      .headline__top-link-text:hover {
+      .headline__top-link__text:hover {
         text-decoration: none;
         color: purple;
         cursor: default; }
@@ -128,12 +128,12 @@ body {
     display: flex;
     justify-content: center;
     margin: 1rem 0; }
-    .headline__social-media-img {
+    .headline__social-media__img {
       width: 165px;
       height: 100%; }
   .headline__photo {
     width: 100%; }
-    .headline__photo--img {
+    .headline__photo__img {
       width: 100%; }
 
 .main-content {
@@ -170,22 +170,22 @@ body {
         font-size: 16px;
         line-height: 28px; } }
 
-.figure-container {
+.figure {
   max-width: 650px;
   margin: 0 auto; }
-  .figure-container .img-responsive {
+  .figure__img {
     width: 100%; }
-  .figure-container .img-desc {
+  .figure__img__desc {
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     line-height: 16px;
     margin: 10px 15px;
     padding: 0;
     color: #A3A5A9; }
-    .figure-container .img-desc--author {
+    .figure__img__desc__author {
       margin-left: 1.5rem; }
 
-.footer {
+.footer- {
   font-family: "Limerick", sans-serif;
   font-size: 14px;
   line-height: 20px;
@@ -195,65 +195,65 @@ body {
   border-top: 1px solid #d7d7d9;
   border-bottom: 1px solid #d7d7d9; }
   @media (max-width: 600px) {
-    .footer {
+    .footer- {
       height: 55rem; } }
-  .footer h2 {
+  .footer- h2 {
     font-size: 24px;
     line-height: 32px;
     font-weight: 500; }
     @media (max-width: 600px) {
-      .footer h2 {
+      .footer- h2 {
         font-size: 20px;
         line-height: 28px; } }
-  .footer-logo {
+  .footer--logo {
     padding: 2rem 0; }
-  .footer-logo-img {
+  .footer--logo-img {
     display: block;
     margin: 0 auto;
     height: 60px; }
-  .footer-inner-container {
+  .footer--inner-container {
     display: flex;
     justify-content: center; }
     @media (max-width: 600px) {
-      .footer-inner-container {
+      .footer--inner-container {
         flex-direction: column;
         align-items: center; } }
-  .footer-inner-container-left {
+  .footer--inner-container-left {
     text-align: center;
     padding-right: 2rem; }
     @media (max-width: 600px) {
-      .footer-inner-container-left {
+      .footer--inner-container-left {
         align-items: center;
         width: 100%; } }
     @media (max-width: 1024px) {
-      .footer-inner-container-left h2 {
+      .footer--inner-container-left h2 {
         margin-left: 1rem; } }
     @media (max-width: 600px) {
-      .footer-inner-container-left h2 {
+      .footer--inner-container-left h2 {
         margin-left: 3rem; } }
-  .footer-inner-container--ad {
+  .footer--inner-container--ad {
     height: 270px;
     margin-top: 1rem; }
     @media (max-width: 1200px) {
-      .footer-inner-container--ad {
+      .footer--inner-container--ad {
         height: 245px; } }
     @media (max-width: 1024px) {
-      .footer-inner-container--ad {
+      .footer--inner-container--ad {
         height: 220px;
         margin-left: 1rem; } }
     @media (max-width: 600px) {
-      .footer-inner-container--ad {
+      .footer--inner-container--ad {
         margin-left: 3rem; } }
-  .footer-inner-container-middle {
+  .footer--inner-container-middle {
     text-align: center;
     width: 20%;
     border-right: 1px solid #d7d7d9;
     border-left: 1px solid #d7d7d9; }
     @media (max-width: 1200px) {
-      .footer-inner-container-middle {
+      .footer--inner-container-middle {
         width: 30%; } }
     @media (max-width: 600px) {
-      .footer-inner-container-middle {
+      .footer--inner-container-middle {
         font-size: 13px;
         border-top: 1px solid #d7d7d9;
         border-bottom: 1px solid #d7d7d9;
@@ -262,49 +262,49 @@ body {
         margin: 1rem 0;
         padding: 1.5rem 0;
         width: 85%; } }
-    .footer-inner-container-middle--links {
+    .footer--inner-container-middle--links {
       font-weight: 500;
       margin-top: 1rem;
       list-style: none;
       display: inline-block; }
-      .footer-inner-container-middle--links li {
+      .footer--inner-container-middle--links li {
         padding: 1rem 0; }
         @media (max-width: 600px) {
-          .footer-inner-container-middle--links li {
+          .footer--inner-container-middle--links li {
             padding: .5rem; } }
-  .footer-inner-container-right {
+  .footer--inner-container-right {
     width: 20%;
     text-align: center; }
     @media (max-width: 1200px) {
-      .footer-inner-container-right {
+      .footer--inner-container-right {
         width: 25%;
         margin-left: 1.3rem; } }
     @media (max-width: 1024px) {
-      .footer-inner-container-right {
+      .footer--inner-container-right {
         margin-right: .7rem;
         width: 25%; } }
     @media (max-width: 600px) {
-      .footer-inner-container-right {
+      .footer--inner-container-right {
         width: 17rem; } }
-    .footer-inner-container-right--links {
+    .footer--inner-container-right--links {
       list-style: none; }
-      .footer-inner-container-right--links li {
+      .footer--inner-container-right--links li {
         font-size: 14px;
         padding: 1.5rem 0 0 0; }
-    .footer-inner-container-right--media {
+    .footer--inner-container-right--media {
       width: 220px;
       margin-bottom: 3rem; }
       @media (max-width: 1200px) {
-        .footer-inner-container-right--media {
+        .footer--inner-container-right--media {
           width: 220px;
           margin-bottom: 2rem; } }
       @media (max-width: 1024px) {
-        .footer-inner-container-right--media {
+        .footer--inner-container-right--media {
           width: 180px; } }
       @media (max-width: 600px) {
-        .footer-inner-container-right--media {
+        .footer--inner-container-right--media {
           width: 220px; } }
-    .footer-inner-container-right button {
+    .footer--inner-container-right button {
       display: block;
       margin: 1rem auto;
       text-transform: uppercase;
@@ -317,14 +317,14 @@ body {
       color: #000;
       border: 5px solid #00aeef; }
       @media (max-width: 1200px) {
-        .footer-inner-container-right button {
+        .footer--inner-container-right button {
           font-size: 10px;
           margin-left: 1rem;
           padding: .7rem 2.7rem; } }
       @media (max-width: 600px) {
-        .footer-inner-container-right button {
+        .footer--inner-container-right button {
           margin: 1rem auto; } }
-  .footer span {
+  .footer- span {
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     line-height: 20px; }
