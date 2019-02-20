@@ -3,19 +3,13 @@
 .main-container {
     width: 60%;
     max-width: 850px;
-	margin: 0 auto;
-    @include respond(big-desktop) {
-        width: 45%;
-    }
-    @include respond(tab-land) {
-        width: 80%;
-	}
+    margin: 0 auto;
+    // MEDIA QUERIES
 	@include respond(tab-port) {
-		width: 90%;
-
+		width: 85%;
     }
     @include respond(phone) {
-        width: 95%;
+        width: 90%;
 
     }
 }
@@ -23,7 +17,6 @@
 ///////// PAGE HEADLINE AND SOCIAL MEDIA ////////
 .headline {
     margin-top: 4rem;
-
     &__top-link {
         display: flex;
         font-family: Lora, serif;
@@ -76,8 +69,7 @@
         &__img{
             width: 100%;
         }
-}
-
+    }
 }
 
 /////////// WEBSITE MAIN CONTENT ////////
@@ -122,18 +114,7 @@
         line-height: 28px;
         margin: 20px 0;
         color: rgba(0, 0, 0, 0.95);
-        @include respond(tab-land) {
-            font-size: 18px;
-            line-height: 28px;
-        }
-        @include respond(tab-port) {
-            font-size: 18px;
-            line-height: 28px;
-        }
-        @include respond(phone) {
-            font-size: 16px;
-            line-height: 28px;
-        }
+ 
     }
 }
 

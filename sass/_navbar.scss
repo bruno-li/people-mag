@@ -17,6 +17,14 @@
         display: flex;
         list-style: none;
         align-items: center;
+        // MEDIA QUERIES
+        @include respond(phone){
+            margin-right: 17rem;
+        }
+        @include respond(small-phone){
+            margin-right: 9rem;
+        }
+        
 
         .navbar__hamburger {
             &-menu{
@@ -28,6 +36,10 @@
             margin-bottom: 7px;
             padding: 10px;
             margin-right: 15px;
+            // MEDIA QUERIES
+            @include respond(phone){
+                margin-right: 0;
+            }
         }
 
         &-text {
@@ -37,6 +49,10 @@
             font-size: 14px;
             line-height: 20px;
             font-weight: 400;
+            // MEDIA QUERIES
+            @include respond(small-phone){
+                display: none;
+            }
         }
 
         .navbar__site-logo{
@@ -52,6 +68,10 @@
         display: flex;
         list-style: none;
         align-items: center;
+        // MEDIA QUERIES
+        @include respond(phone){
+            display: none;
+        }
 
         &-text{
             text-decoration: none;
@@ -62,8 +82,6 @@
             border-left: 1px solid $color-grey;
             padding-left: .7rem;
             padding-right: 1rem;
-            
-
         }
 
         &-vertical-line{
